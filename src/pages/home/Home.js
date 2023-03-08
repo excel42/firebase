@@ -2,7 +2,7 @@ import styles from './Home.module.css'
 import DiaryForm from './DiaryForm'
 import DiaryList from './DiaryList';
 import { useAuthContext } from '../../hooks/useAuthContext'
-import { useCollection } from '../../hooks/useCollection';
+import { useCollection } from '../../hooks/useCollection'
 
 export default function Home() {
 
@@ -18,5 +18,6 @@ export default function Home() {
                 {documents && <DiaryList diaries={documents} />}
             </ul>
         </main>
+
     )
 }

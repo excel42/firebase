@@ -56,9 +56,9 @@ export const useFirestore =(transaction) => {
             dispatch({type:"deleteDoc", payload: docRef });
         } catch(error){
             dispatch({type:"error", payload: error.message });
-        }
-
+        } 
+    return {addDocument,  response}
     }
 
-    return {addDocument, deleteDocument, response}
+    return {addDocument,  response}
 }
